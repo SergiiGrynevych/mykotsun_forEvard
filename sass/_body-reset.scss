@@ -1,0 +1,26 @@
+.container{
+    width: 1355px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: red;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none; /* Убираем маркеры */
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+p,ul,h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
