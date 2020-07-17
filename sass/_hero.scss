@@ -1,4 +1,10 @@
-.content-container__item{
-    position: absolute;
-    top: 10;
+.hero{
+    background-image: url(../images/large-bcg-image.png);
+    // background-image: linear-gradient(rgba(255,255,255,0.9), #f3f9ff);
+    background-repeat: no-repeat;
+    height: 730px;
+}
+
+.description{
+    display: flex;
 }
