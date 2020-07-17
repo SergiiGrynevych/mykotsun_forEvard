@@ -260,8 +260,11 @@ summary {
   max-width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
-  background-color: red;
   margin: 0 auto;
+}
+
+body {
+  font-family: Roboto, sans-serif;
 }
 
 a {
@@ -279,9 +282,24 @@ img {
   height: auto;
 }
 
-p, ul, h1, h2, h3 {
+p,
+ul,
+h1,
+h2,
+h3 {
   margin: 0;
   padding: 0;
+}
+
+.background {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 24px;
+  background-image: url(../images/hero-bcg.jpg);
+  height: 839px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 header {
@@ -319,7 +337,7 @@ header {
 }
 
 .content {
-  margin-left: 94px;
+  margin-left: 88px;
 }
 
 .content-panel {
@@ -332,6 +350,11 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 20px;
+}
+
+.content-panel__item:first-child {
+  margin-left: 0px;
 }
 
 .content-panel__svg {
@@ -348,15 +371,67 @@ header {
   color: #666666;
 }
 
-.hero {
-  background-image: url(../images/large-bcg-image.png);
-  background-repeat: no-repeat;
-  height: 730px;
-}
-
 .description {
+  padding-top: 59px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.description__first {
+  margin-left: auto;
+  width: 370px;
+}
+
+.description__first-title {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.description__second {
+  margin-left: 33px;
+  width: 270px;
+  height: 553px;
+}
+
+.title__content {
+  display: block;
+  margin-top: 1;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.title__content-first {
+  position: relative;
+  z-index: 1;
+}
+
+.title__content-first::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 5px;
+  background-color: #ff6b00;
+}
+
+.title__content-second {
+  position: relative;
+  z-index: 1;
+}
+
+.title__content-second::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 5px;
+  background-color: #a7c93d;
 }
 /*# sourceMappingURL=main.css.map */

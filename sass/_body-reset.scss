@@ -1,26 +1,33 @@
-.container{
-    max-width: 1170px;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: red;
-    margin: 0 auto;
+.container {
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
-a{
-    text-decoration: none;
+body {
+  font-family: Roboto, sans-serif;
 }
 
-li{
-    list-style-type: none; /* Убираем маркеры */
+a {
+  text-decoration: none;
 }
 
-img{
-    display: block;
-    max-width: 100%;
-    height: auto;
+li {
+  list-style-type: none; /* Убираем маркеры */
 }
 
-p,ul,h1,h2,h3{
-    margin: 0;
-    padding: 0;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+p,
+ul,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
 }
