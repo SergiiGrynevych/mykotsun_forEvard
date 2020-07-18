@@ -38,7 +38,7 @@
             </div>
         </header>
        <div class="hero">
-           <div class="description container">
+           <div class="description hero-container">
                 <div class="description__first">
                     <h1 class="description__first-title">
                         Комплексное избавление <br>от грибка — 
@@ -51,75 +51,85 @@
                             </span>
                         </span>  
                     </h1>
-                    <ul>
-                        <li>
-                            <p>2в1</p>
-                            <p>
-                                Комплекс Микоцин устраняет <span>зуд, неприятный запах</span> и возвращает эстетичный вид
+                    <ul class="first__list">
+                        <li class="first__list-item">
+                            <p class="first__list-item-circle">2в1</p>
+                            <p class="first__list-item-definition"> 
+                                Комплекс Микоцин <span class="first__list-item-big co">устраняет <br>зуд, неприятный запах</span><br> и возвращает эстетичный вид
                             </p>
                         </li>
-                        <li>
-                            <p>1</p>
-                            <p>
-                                <span>Таблетки</span> Микоцин <span>уничтожают все виды грибка</span> на ногтях и коже
+                        <li class="first__list-item">
+                            <p class="first__list-item-circle circle-first">1</p>
+                            <p class="first__list-item-definition">
+                                <span class="first__list-item-big title-after-orange">Таблетки</span class="first__list-item-title"> Микоцин <span class="first__list-item-big"> <br>уничтожают все виды грибка</span> <br>на ногтях и коже
                             </p>
-                        <li>
-                            <p>2</p>
-                            <p>
-                                <span>Гель </span>Микоцин <span>восстанавливает кожу </span>и создает на ней <span>защитный барьер</span>
+                        </li>
+                        <li class="first__list-item">
+                            <p class="first__list-item-circle">2</p>
+                            <p class="first__list-item-definition">
+                                <span class="first__list-item-big title-after-green">Гель</span> Микоцин <span class="first__list-item-big"><br>восстанавливает кожу </span><br>и создает на ней <span class="first__list-item-big">защитный <br>барьер</span>
                             </p>
                         </li>
                     </ul>
                 </div>
-                <div class="description__second"> 
-                    <p>Бесплатно</p>
-                    <h3>Успейте заказать со скидкой <span>до 10.09.2018</span></h3>
-                    <ul>
-                        <li>
-                            <p>
-                                старая цена
-                            </p>
-                            <p>
-                                918 &#8381
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                новая цена
-                            </p>
-                            <p>
-                                459 &#8381
-                            </p>
-                        </li>
-                    </ul>
-                    <form action="">
-                        <div>
-                            <input type="text" name="name">
-                            <label for=""></label>
+                <div class="bordered-relative">
+                    <div class="bordered-relative-composition">
+                        <img src="./images/bus.png" alt="иконка автобуса" width="27px">
+                        <p class="bordered-relative-composition-free">Бесплатно</p>
+                    </div>
+                    <div class="description__second">    
+                        <h3 class="description__second-title">Успейте заказать <br>со скидкой <span class="description__second-title-orange"><br>до 10.09.2018</span></h3>
+                        <ul class="second__list">
+                            <li class="second__list-item">
+                                <p class="second__list-item-description secondary-gray is-line">
+                                    старая цена
+                                </p>
+                                <p class="second__list-item-description price-first">
+                                    918 &#8381
+                                </p>
+                            </li>
+                            <li class="second__list-item">
+                                    <p class="second__list-item-description is-line">
+                                    новая цена                         </p>
+                                <p class="second__list-item-description max-font-weight price">
+                                    459 &#8381
+                                </p>
+                            </li>
+                        </ul>
+                        <form action="" id="global-form" class="form">
+                            <div class="form-item">
+                                <label for="label" class="form-item-label" >
+                                    <svg>
+                                        <use href="./images/sprite.svg#form_name"></use>
+                                    </svg>
+                                    <input type="text" name="name" class="form-item-label-input" placeholder=" " id="label">
+                                    <span>Имя</span>
+                                </label>
+                            </div>
+                            <div class="form-item">
+                                <label for="text" class="form-item-label">
+                                    <svg>
+                                        <use href="./images/sprite.svg#form-telephone"></use>
+                                    </svg>
+                                    <input type="text" name="name" class="form-item-label-input" placeholder=" " id="text">
+                                    <span>Телефон</span>
+                                </label>
+                            </div>
+                            <div class="form-button">
+                                <button type="submit" class="form-button-submit">   Заказать <span><br>со скидкой</span>
+                                </button>
+                            </div>
+                        </form>
+                        <p class="proposition">
+                            Осталось <span>10 </span>упаковок <br>со скидкой
+                        </p>
+                        <div class="protection">
+                            <img src="./images/security.png" alt="знак защиты">
+                            <p>Ваши данные защищены!</p>
                         </div>
-                        <div>
-                            <input type="tel" name="tel">
-                            <label for=""></label>
-                        </div>
-                        <div>
-                            <button type="submit">
-
-                            </button>
-                        </div>
-                    </form>
-                    <p>
-                        Осталось <span>10</span> упаковок со скидкой
-                    </p>
-                    <div>
-                        <svg>
-                            <use></use>
-                        </svg>
-                        <p>Ваши данные защищены!</p>
                     </div>
                 </div>
-           </div>
-            
-            
+            </div>
         </div>
     </section>
     

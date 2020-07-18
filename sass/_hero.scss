@@ -3,7 +3,7 @@
 // }
 
 .description {
-  padding-top: 59px;
+  padding-top: 45px;
   display: flex;
 
   &__first {
@@ -14,13 +14,29 @@
       font-size: 44px;
       font-weight: 900;
       line-height: 1;
+      margin-bottom: 40px;
     }
   }
 
   &__second {
-    margin-left: 33px;
+    margin-left: 32px;
     width: 270px;
-    height: 553px;
+    // height: 540px;
+    border: 7px solid $border-color;
+    border-radius: 13px;
+    background-color: #fff;
+
+    &-title {
+      padding-top: 39px;
+      font-size: 20px;
+      font-weight: 500;
+      text-align: center;
+
+      &-orange {
+        color: $primal-orange-color;
+        font-weight: 600;
+      }
+    }
   }
 }
 
@@ -42,11 +58,90 @@
       z-index: -1;
       width: 100%;
       height: 5px;
-      background-color: #ff6b00;
+      background-color: $primal-orange-color;
     }
   }
 
   &-second {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 5px;
+      background-color: $primal-green-color;
+    }
+  }
+}
+
+.first__list {
+  font-size: 20px;
+
+  &-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    margin-bottom: 35px;
+
+    &:first-child::before {
+      content: "";
+      position: absolute;
+      top: 71px;
+      left: 19px;
+      width: 49px;
+      height: 100%;
+      display: block;
+      background: url(../images/arrow-top.png) 0 0 no-repeat;
+    }
+
+    &:nth-last-of-type(2)::before {
+      content: "";
+      position: absolute;
+      top: 71px;
+      left: 19px;
+      width: 49px;
+      height: 100%;
+      display: block;
+      background: url(../images/arrow-plus-minus.png) 0 0 no-repeat;
+    }
+
+    &-circle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-right: 26px;
+
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+
+      background-color: $primal-green-color;
+      color: #fff;
+      font-weight: 700;
+      box-shadow: 0 0 0 7px #e8edc9;
+    }
+
+    &-big {
+      color: black;
+      font-weight: 700;
+    }
+  }
+
+  &-definition {
+    display: inline-block;
+    color: $definition-color;
+  }
+}
+
+.title-after {
+  &-orange {
     position: relative;
     z-index: 1;
     &::after {
@@ -56,8 +151,234 @@
       left: 0;
       z-index: -1;
       width: 100%;
-      height: 5px;
-      background-color: #a7c93d;
+      height: 3px;
+      background-color: $primal-orange-color;
     }
+  }
+  &-green {
+    position: relative;
+    z-index: 1;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 3px;
+      background-color: $primal-green-color;
+    }
+  }
+}
+
+.bordered-relative {
+  position: relative;
+
+  &-composition {
+    position: absolute;
+    top: 0;
+    left: 95px;
+    padding: 0px 8px 10px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 7px solid $border-color;
+    border-right: 7px solid $border-color;
+    border-bottom: 7px solid $border-color;
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    background-color: $primal-background-color;
+
+    & > img {
+      margin-top: -2px;
+    }
+    &-free {
+      margin-top: -2px;
+      // padding-top: 1px;
+      margin-left: 9px;
+      font-size: 16px;
+      color: $definition-color;
+    }
+  }
+}
+
+.second__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 14px 0px 10px 0px;
+
+  text-align: center;
+
+  &-item:first-child {
+    position: relative;
+    margin-right: 13px;
+  }
+
+  &-item-description {
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+}
+
+.is-line {
+  font-size: 14px;
+}
+
+.secondary-gray {
+  color: $secondary-gray-color;
+}
+
+.max-font-weight {
+  background-color: $primal-yellow-color;
+  font-weight: 800;
+  padding: 5px 6px;
+  border-radius: 10px;
+}
+
+.price,
+.price-first {
+  font-size: 34px;
+}
+
+.price-first {
+  &::after {
+    content: "";
+    position: absolute;
+    outline: 1px solid $secondary-orange-color;
+    width: 105%;
+    top: 45px;
+    left: -1px;
+    transform: rotate(17deg);
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    outline: 1px solid $secondary-orange-color;
+    width: 105%;
+    top: 45px;
+    left: -1px;
+    transform: rotate(-17deg);
+  }
+}
+
+.form {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: -35px;
+    right: -34px;
+    display: block;
+    width: 49px;
+    height: 233px;
+    z-index: 1;
+    background: url(../images/arrow.png) 0 0 no-repeat;
+  }
+}
+
+.form-item {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:last-child {
+    margin-bottom: 15px;
+  }
+
+  &-label {
+    position: relative;
+    // margin-left: 18px;
+    // margin-right: 18px;
+
+    & > svg {
+      position: absolute;
+      top: 50%;
+      left: 21px;
+      width: 23px;
+      height: 19px;
+      transform: translateY(-50%);
+    }
+
+    & > span {
+      position: absolute;
+      top: 50%;
+      left: 50px;
+      transform: translateY(-50%);
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      color: $secondary-gray-color;
+    }
+
+    &-input {
+      padding-left: 50px;
+      width: 220px;
+      height: 65px;
+      border-radius: 28px;
+      outline: none;
+      border: none;
+      background-color: #eef2f7;
+    }
+
+    &:focus-within > span,
+    .form-item-label-input:not(:placeholder-shown) + span {
+      transform: translate(-26px, -30px);
+      font-size: 13px;
+    }
+  }
+}
+
+.form-button {
+  padding-top: 10px;
+}
+
+.form-button-submit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70px;
+  width: 218px;
+  outline: none;
+  border: none;
+  border-radius: 28px;
+  background-color: $button-color;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 12px;
+  cursor: pointer;
+
+  & > span {
+    font-size: 16px;
+  }
+}
+
+.proposition {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: 18px;
+  color: $third-gray-color;
+  text-align: center;
+
+  & > span {
+    color: $secondary-green-color;
+  }
+}
+
+.protection {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $security-background-color;
+
+  & p {
+    margin-left: 13px;
+    color: $secondary-gray-color;
   }
 }
