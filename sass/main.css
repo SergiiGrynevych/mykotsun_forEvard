@@ -293,7 +293,8 @@ p,
 ul,
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0;
   padding: 0;
 }
@@ -342,6 +343,7 @@ header {
 
 .header-definition__heading {
   margin-left: 17px;
+  color: black;
 }
 
 .content {
@@ -792,5 +794,113 @@ header {
 .protection p {
   margin-left: 13px;
   color: #666666;
+}
+
+.information {
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.information-image {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.information-title {
+  margin-bottom: 37px;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 0.001em;
+}
+
+.information__description {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.001em;
+}
+
+.information__content {
+  padding: 44px 90px;
+  text-align: center;
+  border: 3px solid rgba(244, 211, 187, 0.8);
+  border-radius: 8px;
+  font-size: 22px;
+  color: #444444;
+  line-height: 28px;
+}
+
+.information__content > span {
+  color: black;
+  font-weight: 700;
+}
+
+.information__absolyte {
+  position: relative;
+}
+
+.information__absolyte::before {
+  position: absolute;
+  content: "";
+  top: -18px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 170px;
+  height: 37px;
+  z-index: 3;
+  background: url(../images/levels-layer.png) no-repeat center center;
+  background-color: #fff;
+}
+
+.flex-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 54px;
+}
+
+.flex-box::after {
+  position: absolute;
+  content: "";
+  top: 215px;
+  left: 18px;
+  width: 50px;
+  outline: 3px solid #becbd8;
+}
+
+.information__list {
+  padding-top: 29px;
+  padding-bottom: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.information__list-item-description-first {
+  margin-left: 20px;
+  width: 142px;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.information__list-item-description-second {
+  margin-left: 18px;
+  width: 301px;
+  font-size: 18px;
+  line-height: 28px;
 }
 /*# sourceMappingURL=main.css.map */

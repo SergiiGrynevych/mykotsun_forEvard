@@ -382,3 +382,100 @@
     color: $secondary-gray-color;
   }
 }
+
+.information {
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  &-image {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  &-title {
+    margin-bottom: 37px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 0.001em;
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.001em;
+  }
+  &__content {
+    padding: 44px 90px;
+    text-align: center;
+    border: 3px solid rgba(244, 211, 187, 0.8);
+    border-radius: 8px;
+    font-size: 22px;
+    color: $definition-color;
+    line-height: 28px;
+
+    & > span {
+      color: black;
+      font-weight: 700;
+    }
+  }
+  &__absolyte {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      top: -18px;
+      left: 50%;
+
+      transform: translate(-50%, 0);
+
+      width: 170px;
+      height: 37px;
+      z-index: 3;
+      background: url(../images/levels-layer.png) no-repeat center center;
+      background-color: #fff;
+    }
+  }
+}
+
+.flex-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 54px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 215px;
+    left: 18px;
+    width: 50px;
+    outline: 3px solid $outline-color;
+  }
+}
+
+.information__list {
+  padding-top: 29px;
+  padding-bottom: 75px;
+  display: flex;
+  justify-content: space-between;
+
+  &-item {
+    &-description-first {
+      margin-left: 20px;
+      width: 142px;
+      font-size: 22px;
+      line-height: 26px;
+      font-weight: 600;
+    }
+    &-description-second {
+      margin-left: 18px;
+      width: 301px;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}
