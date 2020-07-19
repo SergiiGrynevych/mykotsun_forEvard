@@ -19,6 +19,9 @@
     margin-right: 32px;
     margin-left: auto;
     width: 370px;
+    @media screen and (max-width: 691px) {
+      margin-right: 0;
+    }
 
     @media screen and (max-width: 1120px) {
       margin-left: 0;
@@ -29,6 +32,9 @@
       font-weight: 900;
       line-height: 1;
       margin-bottom: 40px;
+      @media screen and (max-width: 691px) {
+        text-align: center;
+      }
     }
   }
 
