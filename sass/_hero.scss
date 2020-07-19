@@ -32,7 +32,7 @@
       font-weight: 900;
       line-height: 1;
       margin-bottom: 40px;
-      @media screen and (max-width: 691px) {
+      @media screen and (max-width: 669px) {
         text-align: center;
       }
     }
@@ -510,7 +510,7 @@
     margin-right: 60px;
     width: 320px;
     // width: calc(((100% - 70px * 2) - 30px) / 3);
-    @media screen and (max-width: 1123px) {
+    @media screen and (max-width: 1129px) {
       margin-right: 20px;
       //  width: calc(((100% - 20px * 2) - 30px) / 3);
     }

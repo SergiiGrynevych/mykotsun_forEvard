@@ -482,7 +482,7 @@ header {
   margin-bottom: 40px;
 }
 
-@media screen and (max-width: 691px) {
+@media screen and (max-width: 669px) {
   .description__first-title {
     text-align: center;
   }
@@ -1012,7 +1012,7 @@ header {
   width: 320px;
 }
 
-@media screen and (max-width: 1123px) {
+@media screen and (max-width: 1129px) {
   .information__list-item {
     margin-right: 20px;
   }
