@@ -1029,6 +1029,12 @@ header {
   font-weight: 600;
 }
 
+@media screen and (max-width: 350px) {
+  .information__list-item-description-first {
+    margin-left: 10px;
+  }
+}
+
 .information__list-item-description-second {
   margin-left: 18px;
   width: 301px;

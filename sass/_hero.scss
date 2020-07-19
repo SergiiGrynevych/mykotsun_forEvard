@@ -535,6 +535,10 @@
       font-size: 22px;
       line-height: 26px;
       font-weight: 600;
+
+      @media screen and (max-width: 350px) {
+        margin-left: 10px;
+      }
     }
     &-description-second {
       margin-left: 18px;
