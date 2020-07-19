@@ -116,6 +116,10 @@
     // justify-content: center;
     margin-bottom: 35px;
 
+    @media screen and (max-width: 378px) {
+      height: 69px;
+    }
+
     &:first-child::before {
       content: "";
       position: absolute;
@@ -153,17 +157,27 @@
       color: #fff;
       font-weight: 700;
       box-shadow: 0 0 0 7px #e8edc9;
+
+      @media screen and (max-width: 389px) {
+        margin-right: 16px;
+      }
     }
 
     &-big {
       color: black;
       font-weight: 700;
     }
-  }
 
-  &-definition {
-    display: inline-block;
-    color: $definition-color;
+    &-definition {
+      display: inline-block;
+      color: $definition-color;
+      @media screen and (max-width: 378px) {
+        font-size: 18px;
+      }
+      @media screen and (max-width: 350px) {
+        font-size: 17px;
+      }
+    }
   }
 }
 
