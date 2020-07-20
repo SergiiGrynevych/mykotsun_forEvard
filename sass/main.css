@@ -358,7 +358,7 @@ header {
 
 @media screen and (max-width: 1120px) {
   .header-definition {
-    margin-left: 0;
+    margin: 0 auto;
   }
 }
 
@@ -1036,9 +1036,15 @@ header {
   width: 320px;
 }
 
-@media screen and (max-width: 1129px) {
+@media screen and (min-width: 366px) and (max-width: 1129px) {
   .information__list-item {
     margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .information__list-item {
+    width: auto;
   }
 }
 
@@ -1058,7 +1064,7 @@ header {
 
 .information__list-item-description-first {
   display: block;
-  margin-left: 20px;
+  margin-left: 15px;
   width: 100%;
   font-size: 22px;
   line-height: 26px;
@@ -1074,7 +1080,6 @@ header {
 
 .information__list-item-description-second {
   margin-left: 18px;
-  max-width: 301px;
   font-size: 18px;
   line-height: 28px;
 }
@@ -1083,6 +1088,7 @@ header {
   .information__list-item-description-second {
     margin-left: 10px;
     font-size: 16px;
+    margin-left: 0px;
   }
 }
 
