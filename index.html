@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Микоцин</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="./sass/main.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
                 <h2 class="header-definition__heading">Микоцин</h2>
             </a>
             <div class="content">
-                <ul class="content-panel" data-aos="zoom-out-left">
+                <ul class="content-panel">
                     <li class="content-panel__item" >
                         <svg class="content-panel__svg">
                             <use href="./images/sprite.svg#number-circle"></use>
@@ -38,7 +38,7 @@
                 </ul>
             </div>
         </header>
-       <div class="hero" data-aos="zoom-in" data-aos-duration="1000">
+       <div class="hero">
            <div class="description hero-container">
                 <div class="description__first">
                     <h1 class="description__first-title">
@@ -137,7 +137,7 @@
         </div> 
     </section>
 
-    <section class="container information" data-aos="zoom-out-up">
+    <section class="container information">
         <img src="./images/gears.png" alt="иконка шестрени" class="information-image">
         <h4 class="information-title">
             Грибок – это опасная инфекция
@@ -146,7 +146,7 @@
             которая угрожает вам и вашим близким, ведь с каждым днем грибок приводит к:
         </p>
         <ul class="information__list">
-            <li class="information__list-item" data-aos="zoom-out-up" data-aos-duration="2000">
+            <li class="information__list-item" >
                 <div class="flex-box">
                     <img src="./images/bad-skin-first.png" alt="фотография кожи с аллеригией" class="information__list-item-image">
                     <p class="information__list-item-description-first">
@@ -156,7 +156,7 @@
                 <p class="information__list-item-description-second">Может появится сильная реакция на привычную пищу, одежду, средства гигиены
                 </p>
             </li>
-            <li class="information__list-item" data-aos="zoom-out-up" data-aos-duration="2000">
+            <li class="information__list-item">
                 <div class="flex-box">
                     <img src="./images/bad-skin-second.png" alt="фотография поврежденного ногтя и пальця"
                         class="information__list-item-image">
@@ -168,7 +168,7 @@
                     После полного разрушения ногтя грибок распространяется на палец, что приводит к его ампутации
                 </p>
             </li>
-            <li class="information__list-item" data-aos="zoom-out-up" data-aos-duration="2000">
+            <li class="information__list-item">
                 <div class="flex-box">
                     <img src="./images/bad-skin-third.png" alt="фотография человека под капельницей" class="information__list-item-image">
                     <p class="information__list-item-description-first">
@@ -188,9 +188,5 @@
         </div>
 
     </section>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-      </script>
 </body>
 </html>
